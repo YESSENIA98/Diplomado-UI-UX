@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  background-color: rgb(5, 5, 10);
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.navbar,
+#redes {
+  background-color: rgb(127, 199, 217);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-around;
+}
+.navbar a,
+#redes a {
+  background-color: rgb(127, 199, 217);
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  color: rgb(5, 5, 10);
+}
+.navbar img,
+#redes img {
+  background-color: rgb(127, 199, 217);
+}
+
+.navbar a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(5, 5, 10);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.about_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about_content img {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.about_content p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding-bottom: 3%;
+}
+
+h2 {
+  padding-left: 2%;
+}
+
+.about_experience {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.about_experience div {
+  border: 2px solid rgb(127, 199, 217);
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+.about_experience img {
+  padding-bottom: 1%;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  text-align: center;
+}
+.project div {
+  border: 2px solid rgb(127, 199, 217);
+  padding: 1%;
+  width: 90%;
+  border-radius: 30px;
+}
+.project img {
+  margin: 3px;
+}
+
+.project button,
+#contact button {
+  background-color: rgb(127, 199, 217);
+  color: rgb(5, 5, 10);
+  border-radius: 14px;
+}
+.project button :hover,
+#contact button :hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.tecnologies {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.tecnologies div {
+  border: 2px solid rgb(127, 199, 217);
+  padding: 1%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  margin: 2%;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#contact div {
+  border: 2px solid rgb(127, 199, 217);
+  padding: 1%;
+  width: 40%;
+  border-radius: 30px;
+}
+#contact input {
+  background-color: rgb(195, 212, 211);
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+textarea {
+  background-color: rgb(195, 212, 211);
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#redes {
+  justify-content: center;
+}
+
+@media (min-width: 375px) {
+  .tecnologies {
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navbar,
+  #redes {
+    width: 100%;
+  }
+  textarea {
+    width: 95%;
+  }
+  .about_content p {
+    width: 70%;
+    text-align: center;
+  }
+  .about_experience {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_experience div {
+    margin: 10px;
+    width: 80%;
+  }
+  .project {
+    line-height: 1.5;
+  }
+  h2,
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=ensayo.css.map */
